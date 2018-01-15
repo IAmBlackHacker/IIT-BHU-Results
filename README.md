@@ -1,5 +1,5 @@
 **# CSE15Res**
-Only for cse15 btech,idd
+For IIT BHU INTRANET
 ```
 How To Run ?
 ```
