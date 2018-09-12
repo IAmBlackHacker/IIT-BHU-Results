@@ -18,5 +18,6 @@ try:
 	else:
 		print('Enter Valid Roll')
 		os.system('pause')	
-except:
-	print('\n\n\t\tTry in python3.x else whats 8419027520')
+except Exception as ex:
+	print('\n\n\t\tTry in python3.x')
+	print(ex)
