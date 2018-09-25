@@ -1,12 +1,16 @@
 import sys
+import os
 try:
 	import hashlib
 	import webbrowser
 	import pickle
 except:
-	print('install first hashlib,webbrowser\n   python3 -m pip install pickle\n   python3 -m pip install hashlib\n   python3 -m pip install webbrowser\nThis code will run on python 3.x')
+	print('  Install first hashlib,webbrowser\n-------------------------------------------\n   python3 -m pip install pickle\n   python3 -m pip install hashlib\n   python3 -m pip install webbrowser\nThis code will run on Python Version 3.x')
 	sys.exit(0)
-import os
+
+if sys.version_info[0] != 3:
+	print('\n------------------------------\n     USE PYTHON 3.x \n------------------------------\n')
+	sys.exit(0)
 
 try:
 	N=str(input('Enter Roll : '))
@@ -19,5 +23,4 @@ try:
 		print('Enter Valid Roll')
 		os.system('pause')	
 except Exception as ex:
-	print('\n\n\t\tTry in python3.x')
 	print(ex)
