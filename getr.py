@@ -16,7 +16,7 @@ def open_roll(N):
 	maps=pickle.load(open('Finals','rb'))
 	has=hashlib.md5(N.encode('utf-8')).hexdigest()
 	if has in maps.keys():
-		cmd='http://10.1.131.10/grade_sheet/index.php?sname='+N+'&sid='+maps[has]+'&msname='+has+'&ms1=95aea4c3483c560373356d1ba3fd73cc'
+		cmd='http://10.1.131.11/grade_sheet/index.php?sname='+N+'&sid='+maps[has]+'&msname='+has+'&ms1=95aea4c3483c560373356d1ba3fd73cc'
 		webbrowser.open(cmd)
 	else:
 		print('\n\tEnter Valid Roll\t')
