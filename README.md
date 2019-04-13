@@ -6,7 +6,7 @@ For IIT BHU INTRANET Only
 * [python3](https://www.python.org/download/releases/3.0/)
 
 ## Use
-* git clone https://github.com/IAmBlackHacker/CSE15Res
+* git clone https://github.com/IAmBlackHacker/IIT-BHU-Results
 * cd IIT-BHU-Results
 
 ```
