@@ -1,5 +1,4 @@
-# IIT-BHU Results
-For IIT BHU INTRANET Only
+
 
 ## Requirements
 * git
