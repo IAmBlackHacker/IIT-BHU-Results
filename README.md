@@ -21,5 +21,5 @@ Run Using Following Command
 ## [Feedback](https://m.me/B14CKH4K3R)
 
 ```
-Educational Purpose Only ...!
+Educational Purpose Only ...!!
 ```
