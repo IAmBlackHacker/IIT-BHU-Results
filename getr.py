@@ -1,6 +1,15 @@
 import sys
 import os
 try:
+	N=str(input('Enter Roll : '))
+	open_roll(N)
+except pickle.UnpicklingError:
+	content = open('Finals','rb').read()
+	with open('Finals','wb') as output:
+		for line in content.splitlines():
+			output.write(line + str.encode('\n'))
+	open_roll(N)
+try:
 	import hashlib
 	import webbrowser
 	import pickle
@@ -20,15 +29,7 @@ def open_roll(N):
 		webbrowser.open(cmd)
 	else:
 		print('\n\tEnter Valid Roll\t')
-try:
-	N=str(input('Enter Roll : '))
-	open_roll(N)
-except pickle.UnpicklingError:
-	content = open('Finals','rb').read()
-	with open('Finals','wb') as output:
-		for line in content.splitlines():
-			output.write(line + str.encode('\n'))
-	open_roll(N)
+
 except Exception as ex:
 	print(ex)
 	print('Messege Code Admin ...!')
